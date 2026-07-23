@@ -1,0 +1,227 @@
+/* ===============
+    General Reset
+    =============== */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0f0f0f ;
+        color: white;
+    }
+
+    /*==================
+        Hero Section
+        ================== */
+        
+        .hero {
+            min-height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .start-button {
+            padding: 14px 28px;
+
+            background-color: white;
+            color: #0f0f0f;
+            
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 8px;
+        }
+    /* ===================
+        Header
+        ================== */
+        
+        header {
+            width: 100%;
+            padding: 24px 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* ===================
+             Mood Section
+             ================== */
+
+             .mood-selection {
+                padding: 100px 60px;
+                text-align: center;
+             }
+
+             .mood-selection h2 {
+                font-size: 32px;
+                margin-bottom: 15px;
+             }
+
+             .mood-selection p {
+                font-size: 18px;
+                margin-bottom: 35px;
+             }
+
+             .mood-options button {
+                padding: 14px 24px;
+
+                background-color: transparent;
+                color: white;
+
+                border:1px solid #555;
+                border-radius: 8px;
+
+                font-size: 16px;
+                cursor: pointer;
+             }
+
+             .mood-options button.selected {
+                background-color: white;
+                color: #0f0f0f;
+                border-color: white;
+             }
+
+/* ===================
+    Trending section
+    ================== */
+    
+    .trending {
+        padding: 80px 60px;
+    }
+
+    .trending h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .movie-list {
+        display: flex;
+        gap: 24px;
+        overflow-x: auto;
+    }
+
+    .movie-card {
+        min-width: 220px;
+    }
+
+    .movie-card img {
+        width: 100%;
+        height: 330px;
+
+        object-fit: cover;
+        border-radius: 10px;
+
+        display: block;
+    }
+
+    .movie-card p {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    /* ======================
+        Experience section
+        ====================== */
+
+        .experience {
+            padding: 100pc 60px;
+            text-align: center;
+        }
+
+        .experience-selection h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .experience-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .experience-options button {
+            padding: 14px 24px;
+
+            background-color: transparent;
+            color: white;
+
+            border:1px solid #555;
+            border-radius: 8px;
+
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+/* ======================
+    Recommendation section
+    ====================== */
+
+    .recommendation-section {
+        padding: 80px 60px;
+        text-align:center;
+    }
+
+    #find-movie-button {
+        padding: 16px 32px;
+
+        background-color: white;
+        color: #0f0f0f;
+
+        border: none;
+        border-radius: 8px;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+    }
+
+    #find-moviee-button:hover {
+        transform: translateY(-2px);
+    }
+
+    #recommendation-result {
+        margin-top: 30px;
+    }
